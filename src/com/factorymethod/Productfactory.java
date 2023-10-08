@@ -2,7 +2,8 @@ package com.factorymethod;
 
 public class Productfactory {
     public static final int TYPE_PRODUITA1 = 1;
-     public static final int TYPE_PRODUITA2 = 2;
+    public static final int TYPE_PRODUITA2 = 2;
+    public static final int TYPE_PRODUITA3 = 3;
 
      // Methode de fabrique de produit
      public ProduitA getProduit(int type_produit){
@@ -15,6 +16,9 @@ public class Productfactory {
             break;
             case TYPE_PRODUITA2:
             produitA = new ProduitA2();
+            break;
+             case TYPE_PRODUITA3:
+            produitA = new ProduitA3();
             break;
             default:
              throw new IllegalArgumentException("TYPE DE PRODUIT INCONNU !");

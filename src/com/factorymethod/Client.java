@@ -11,6 +11,9 @@ public class Client {
         produitA = productfactory.getProduit(productfactory.TYPE_PRODUITA2);
         produitA.MethodeA();
 
+         produitA = productfactory.getProduit(productfactory.TYPE_PRODUITA3);
+        produitA.MethodeA();
+
         produitA = productfactory.getProduit(0);
         produitA.MethodeA();
     }
